@@ -1,0 +1,275 @@
+%! TEX program = lualatex
+
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+%%
+%% Permission is hereby granted, free of charge, to any person obtaining a copy
+%% of this software and associated documentation files (the "Software"), to deal
+%% in the Software without restriction, including without limitation the rights
+%% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%% copies of the Software, and to permit persons to whom the Software is
+%% furnished to do so, subject to the following conditions:
+%%
+%% The above copyright notice and this permission notice shall be included in all
+%% copies or substantial portions of the Software.
+%%
+%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%% SOFTWARE.
+
+% The font could be set to Windows-specific Calibri by using the 'calibri' option
+\documentclass[]{mcdowellcv}
+
+% For mathematical symbols
+\usepackage{amsmath}
+% Set applicant's personal data for header
+% Full name
+\name{Jihoon Og}
+% This is my contact information and location 
+\contacts{(403) 393-7144 \linebreak jihoonog@gmail.com \linebreak Edmonton, AB}
+
+\begin{document}
+
+% Print the header
+\makeheader
+
+% Print Research interests
+% \begin{cvsection}{Research Interests}
+%   \begin{center}
+%     ~\\
+%     \begin{itemize*}
+%       \item Operating Systems
+%       \item Performance modeling
+%       \item Heterogenous Computing
+%     \end{itemize*}
+%   \end{center}
+% \end{cvsection}
+% \vspace*{-12pt}
+
+% Print Education
+\begin{cvsection}{Education}
+  \begin{cvsubsection}{Edmonton, AB}{University of Alberta}{Fall 2018 -- December 2021 (Expected)}
+    \begin{itemize}
+      \item B.Sc. Honors in Computing Science -- GPA: 3.5.
+      \item \textbf{Undergraduate Coursework:} 
+        Operating System Concepts,
+        File and Database Systems,
+        Computer Systems and Architecture II,
+        Calculus II,
+        Image Recognition,
+        Software Process and Product Management,
+        GPU Programming, 
+        Software Defined Radio, 
+        Web Application and Architecture.
+      \item \textbf{Dean's Honor Roll:} For the 2018-2019 academic year. 
+    \end{itemize}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Lethbridge, AB}{University of Lethbridge}{Fall 2016 -- Spring 2018}
+    \begin{itemize}   
+      \item B.Sc. in Computer Science with a minor in Economics - GPA: 3.96.
+      \item \textbf{Undergraduate Coursework:} 
+        Fundamentals of Programming,
+        Discrete Mathematics,
+        Digital Systems,
+        Linear Algebra I,
+        Computer Architecture,
+        Data Structure and Algorithms,
+        Artificial Intelligence,
+        Music Software Design,
+        Statistics I,
+        Practical Software Development.
+      \item \textbf{Dean's Honor Roll:} For the 2016 - 2017 and 2017 - 2018 academic years.
+    \end{itemize}
+  \end{cvsubsection}
+\end{cvsection}
+
+% Print Teaching Experience
+\vspace*{-10pt}
+\begin{cvsection}{Teaching Experience}
+  \begin{cvsubsection}{Undergraduate Teaching Assistant}{University of Alberta}{January 2021 -- April 2021}	
+    \vspace*{8pt}
+    \begin{itemize}
+      \item Created weekly weekly assignments for Introduction to Tangible Computing 2 
+      \item Attended lab sessions to help students with course content
+    \end{itemize}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Undergraduate Teaching Assistant}{University of Alberta}{September 2020 -- December 2020}	
+    \vspace*{8pt}
+    \begin{itemize}
+      \item Created worksheets for Introduction to Tangible Computing 1 
+      \item Created mid-term materials for the algorithms and data structures specifically on Huffman trees and coding 
+      \item Attended lab sessions to help students with course content
+    \end{itemize}
+  \end{cvsubsection}
+  
+  \begin{cvsubsection}{Undergraduate Teaching Assistant}{University of Alberta}{September 2019 -- December 2019}	
+    \vspace*{8pt}
+    \begin{itemize}
+      \item Created assignments for Operating Systems Concepts. 
+      \item Attended lab sessions to help students with course content.
+    \end{itemize}
+  \end{cvsubsection}
+  
+\end{cvsection}
+
+% Print Work Experience
+\vspace*{-10pt}
+\begin{cvsection}{Work Experience}
+   \begin{cvsubsection}{Assistant Engineer, Intern}{Huawei Canada}{May 2020 -- August 2021}
+    \vspace*{5pt}
+    \begin{itemize}
+      \item Created an automated testing and performance analysis infrastructure to help developers improve compiler performance.
+      \item Performed profiling analysis on AI specific algorithms and improve upon them.
+      \item Performed performance analysis on the benefit of Out-of-Order Commit using gem5 and LLVM to show hardware and software benefits.
+      \item Developed an ML-guided performance prediction model for LLVM IR.
+    \end{itemize}
+  \end{cvsubsection}
+  
+  \begin{cvsubsection}{Research Assistant, Summer Student}{University of Alberta}{May 2019 -- August 2019}
+    \vspace*{5pt}		
+    \begin{itemize}
+      \item Developed a real-time occupancy flow and recognition algorithm for a low resolution infrared camera.
+      \item Established 2 Linux servers for machine learning, and algorithmic testing for the university's sustainable computing and networking lab.
+    \end{itemize}
+  \end{cvsubsection}
+ 
+  \begin{cvsubsection}{Research Assistant, Summer Student}{University of Lethbridge}{May 2018 -- August 2018}	
+    \vspace*{5pt}
+    \begin{itemize}
+      \item Developed an API written in C++ for a neuromorphic camera using software development techniques to streamline algorithm development and testing.
+      \item Created a comprehensive dataset using the neuromorphic camera to be used by researchers for algorithmic testing and evaluation.
+    \end{itemize}
+  \end{cvsubsection}
+\end{cvsection}
+
+% Print Independent Studies
+\vspace*{-10pt}
+\begin{cvsection}{Independent Studies}
+  \begin{cvsubsection}{Undergraduate Student}{University of Alberta}{September 2019 -- January 2020}
+    \vspace*{5pt}
+    \begin{itemize}
+      \item Explored Software Defined Radio using GNU Radio on the ADALM-PLUTO platform.
+      \item Researched real time storage and processing of multiple radio bands on the Ettus X310 SDR platform.
+    \end{itemize}
+  \end{cvsubsection}
+\end{cvsection}
+
+% Print Conferences
+\vspace*{-10pt}
+\begin{cvsection}{Conferences}
+  \begin{cvsubsection}{Canadian Undergraduate Computer Science Conference}{University of Calgary}{2018}
+  \end{cvsubsection}
+\end{cvsection}
+
+% Print Skills
+\vspace*{-10pt}
+\begin{cvsection}{Skills}
+  \begin{cvsubsection}{Programming Languages}{}{}	
+    \begin{itemize}
+      \item \emph{(Proficient):} C/C++, Python, Bash, R  
+      \item \emph{(Familiar):} Java, JavaScript, SQL, Scheme, SQLite, Arduino
+    \end{itemize}
+  \end{cvsubsection}
+  
+  \begin{cvsubsection}{Frameworks and Libraries}{}{}
+    \begin{itemize}
+      \item \emph{(Proficient):} Django, Gem5, Pytorch, OpenCV, LLVM
+      \item \emph{(Familiar):)} ROS, Tensorflow
+    \end{itemize}
+  \end{cvsubsection}
+  
+  \begin{cvsubsection}{Tools}{}{}
+    \begin{itemize}
+      \item \emph{(Proficient):} GDB, Valgrind, Git 
+      \item \emph{(Familiar):} gprof, gcov
+    \end{itemize}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Others}{}{}
+    \begin{itemize}
+    \item \emph{(Proficient):} Linux, Microsoft Office Suite (Word, Excel)
+    \end{itemize}
+  \end{cvsubsection}
+
+\end{cvsection}
+
+\vspace*{-10pt}
+\begin{cvsection}{Projects}
+  \begin{cvsubsection}{CMPUT-404 Software Project}{}{2021}
+    \begin{itemize}
+      \item Helped develope a peer-to-peer blogging and social networking platform for CMPUT 404 Web Applications and Architecture.
+      \item Allow users to see and connect to other users on a different server. 
+      \item Developed using Django for the back-end and React for the front-end. 
+    \end{itemize}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{CMPUT-401 Software Project}{}{2020}
+    \begin{itemize}
+      \item Helped develope an election generation system for the University of Alberta Students' Union
+      \item Developed using Django for the back-end and Vue for the front-end.
+    \end{itemize}
+  \end{cvsubsection}
+\end{cvsection}
+
+% Print awards and scholarships
+\vspace*{-10pt}
+\begin{cvsection}{Awards and Scholarships}
+  \begin{cvsubsection}{}{}{}
+    \begin{itemize}
+      \item \textbf{2020/2021:} Jason Lang Scholarship
+      \item \textbf{2019/2020:} Jason Lang Scholarship
+      \item \textbf{2018/2019:} Jason Lang Scholarship
+      \item \textbf{2017/2018:} Louise McKinney Post-secondary Scholarship 
+      \item \textbf{2018:} NSERC Undergraduate Student Research Awards
+    \end{itemize}
+  \end{cvsubsection}
+\end{cvsection}
+
+% Print Languages
+\vspace*{-10pt}
+\begin{cvsection}{Languages}
+  \begin{cvsubsection}{}{}{}	
+    \begin{itemize}
+      \item \emph{(Native)} English  
+    \end{itemize}
+  \end{cvsubsection}
+\end{cvsection}
+\newpage
+% Print Extracurricular and other stuff
+\vspace*{-10pt}
+\begin{cvsection}{Leadership and Extracurriculars}{}{}
+  \begin{cvsubsection}{Senior Representative}{UACS (University of Alberta)}{2019 -- 2020}
+    \begin{itemize}
+      \item Represented the senior student body of Computing Science students through the \textbf{Undergraduate Association of Computing Science (UACS)}
+      \item Helped plan events including the Computing Science Graduation Party for newly graduated Computing Science students.
+      \item Assisted in the daily operations of UACS, including but not limited to: food restocking, office cleaning, and weekly meetings.        
+    \end{itemize}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Volunteer}{HackED}{2019, 2020}
+    \begin{itemize}
+      \item Helped setup for the 24-hour event, moving and checking equipments, and helped with registrations.
+      \item Assisted teams with debugging code, providing directions to events, and transporting foods and drinks throughout the event.    
+    \end{itemize}
+  \end{cvsubsection}
+  
+  \begin{cvsubsection}{Competitor}{Programming Competitions}{2017}
+    \begin{itemize}
+      \item \textbf{2017 Rocky Mountain Regional ACM ICPC:} Placed 31st out of 52.
+      \item \textbf{2017 Alberta Collegiate Programming Contest:} Placed 28th out of 53.
+      \item \textbf{2017 Lethbridge Collegiate Programming Contest:} Place 4th in Division 2.
+    \end{itemize}
+  \end{cvsubsection}
+\end{cvsection}
+
+
+
+
+\end{document}
