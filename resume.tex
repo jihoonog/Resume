@@ -27,6 +27,12 @@
 
 % For mathematical symbols
 \usepackage{amsmath}
+\usepackage[hidelinks]{hyperref} 
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=blue,
+}
 
 % Set applicant's personal data for header
 \name{Jihoon Og}
@@ -37,6 +43,10 @@
 
 % Print the header
 \makeheader
+\begin{flushright}
+  \href{https://www.linkedin.com/in/jihoon-og-b938241a3/}{LinkedIn} \\
+  \href{https://github.com/jihoonog}{GitHub}
+\end{flushright}
 
 % Print the content
 \begin{cvsection}{Education}
@@ -122,7 +132,7 @@
 \begin{cvsection}{Additional Experience and Awards}
   \begin{cvsubsection}{}{}{}	
     \begin{itemize}
-      % \item \textbf{Teaching Assistant (Fall 2024):} Marked assignments, midterm, and final as well as performed lab lectures for Operating Systems Concepts.
+      \item \textbf{Teaching Assistant (Fall 2024):} Marked assignments, midterm, and final as well as performed lab lectures for Operating Systems Concepts.
       \item \textbf{Teaching Assistant (Winter 2024):} Marked assignments and performed lab lectures for Security in a Networked World.
       \item \textbf{Teaching Assistant (Fall 2023):} Marked assignments and managed group projects in Introduction to Software Engineering, and attended lab sessions to help students with course content.
       \item \textbf{Teaching Assistant (Winter 2022):} Marked assignments and managed group projects in Web Applications and Architecture, and attended lab sessions to help students with course content.
@@ -137,10 +147,9 @@
   \begin{cvsubsection}{}{}{}	
     \begin{itemize}
       \item \emph{(Proficient):} C/C++, Python, Linux, Git. Bash, R  
-            \emph{(Familiar):} Java, SQL, Scheme, SQLite, Arduino.
+      \item \emph{(Familiar):} Java, SQL, Scheme, SQLite, Arduino, MATLAB, JavaScript
       \item \emph{(Proficient):} GDB, Valgrind
-            \emph{(Familiar):} gprof, gcov, CppUnit, LLVM
-      \item \emph{(Familiar):} ROS      
+      \item \emph{(Familiar):} gprof, gcov, CppUnit, LLVM, ROS      
       \item Microsoft Office Suite (Word, Excel)
     \end{itemize}
   \end{cvsubsection}
@@ -150,6 +159,8 @@
   \begin{cvsubsection}
     {}{}{}
     \begin{itemize}
+      \item \textbf{NeurAlbertaTech:} Director of Logistics (2024)  
+      \item \textbf{HackED:} Food and Swag Organizer (2023-2024)  
       \item \textbf{Undergraduate Association of Computing Science:} Senior Representative (2019-2020)  
     \end{itemize}
   \end{cvsubsection}
